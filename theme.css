@@ -1,0 +1,178 @@
+:root {
+	/* Primary Colors */
+	--color-primary: #FF0F3F;          /* Hot red */
+	--color-primary-hover: #E60036;    /* Darker red */
+	
+	/* Background Colors */
+	--color-background: #121212;       /* Darker background */
+	--color-card: #252525;             /* Card background */
+	--color-hover: #2A2A2A;            /* Hover state */
+	
+	/* Text Colors */
+	--text-primary: #FFFFFF;
+	--text-secondary: #A0A0A0;
+	
+	/* Border & Input Colors */
+	--color-border: #3f3f46;           /* Dark borders */
+	--color-input-primary: #27272a;    /* Input background */
+	
+	/* Button Colors */
+	--color-btn-default: #27272a;      /* Default button */
+	--color-btn-primary: #F6423B;      /* Primary button */
+	--color-btn-primary-text: #ffffff; /* Button text */
+}
+
+body, :host {
+	font-size: 16px;
+	font-family: "Inter var", sans-serif;
+	color: var(--text-primary);
+	background-color: var(--color-bg);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+*, ::before, ::after {
+	border-color: var(--color-border) !important;
+}
+
+.ui-popover__trigger {
+		line-height: 1;
+	}
+
+.ui-popover__content {
+	border-radius: 8px;
+	border-width: 1px;
+	padding: 16px;
+		background-color: var(--color-card);
+		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.ui-switch {
+	background-color: var(--color-input-primary);
+	transition: background-color 250ms ease;
+}
+
+.ui-switch:hover, .ui-switch:focus {
+		background-color: var(--color-input-secondary);
+	}
+
+.ui-switch:focus {
+		outline: none;
+	}
+
+.ui-input {
+	display: inline-block;
+}
+
+.ui-input__content {
+	position: relative;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.ui-input__label {
+		color: var(--text-secondary);
+		margin-left: 4px;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 20px;
+		line-height: 1;
+	}
+
+.ui-input__prepend-icon {
+		color: var(--text-secondary);
+		position: absolute;
+		left: 0px;
+		margin-left: 8px;
+	}
+
+.ui-input input {
+	width: 100%;
+	border-radius: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+		background-color: var(--color-input-primary);
+		transition: background-color 250ms ease;
+}
+
+.ui-input input:hover, .ui-input input:focus {
+			background-color: var(--color-input-secondary);
+		}
+
+.ui-input input:focus {
+			outline: none;
+		}
+
+.ui-input input.disabled {
+	pointer-events: none;
+	opacity: 0.75;
+}
+
+.ui-input input.with-icon {
+	padding-left: 40px;
+}
+
+.ui-button {
+	border-radius: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.ui-button.icon {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.ui-list__item {
+		display: flex;
+		align-items: center;
+		transition: background-color 250ms ease;
+		border-radius: 8px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+.ui-list__item:hover {
+			background-color: var(--color-hover);
+		}
+
+.ui-button {
+	transition: background-color 250ms ease;
+  position: relative;
+  height: 40px;
+  color: var(--color-btn-default-text);
+  background-color: var(--color-btn-default);
+}
+
+.ui-button.primary {
+  	color: var(--color-btn-primary-text);
+  	background-color: var(--color-btn-primary);
+  }
+
+.ui-card {
+	background-color: var(--color-card);
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.text-secondary {
+	color: var(--text-secondary);
+}
+
+.tippy-box[data-theme~='tooltip-theme'] {
+  background-color: var(--color-card);
+  border-radius: 6px;
+  border-width: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
